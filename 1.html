@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    
+</head>
+<link rel="stylesheet" href="css/1.css">
+<style>
+    body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('body.jpg');
+    background-repeat: no-repeat;
+    color:white;
+    background-size: cover;
+}
+.left{
+    display:inline-block;
+    position:absolute;
+    left:6px;
+    top:6px;
+}
+.mid{
+    display:block;
+    width:46%;
+    margin:12px auto;
+    text-align: center;
+}
+.right{
+    position:absolute;
+    right:34px;
+    top:20px;
+    display: inline-block;
+}
+.nav{
+    display:inline-block;
+}
+.nav li{
+    display: inline-block;
+    font-size: 20px;
+}
+.nav li a{
+    color:white;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+.nav li a:hover, .nav li a:active{
+    color:grey;
+    text-decoration: underline;
+}
+.left img{
+width:91px;
+filter:invert(100%);
+}
+.left div{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+.btn{
+    margin:0px 9px;
+    background-color: black;
+    color: white;
+    padding:4px 8px;
+    border:2px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: grey;
+}
+.container{
+        border: 2px solid white;
+        margin: 100px 450px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+
+}
+.form-group input{
+    font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+}
+.container h1 {
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    h2{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: inline-block;
+        width: 508px;
+        padding:5px;
+        border: 2px solid black;
+        position: relative;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: grey;
+    }
+    .male,.female,.other{
+        font-family: 'Baloo Bhai', cursive;  
+        padding: 5px;
+        border: 2px solid black;
+        margin: 230px ;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: grey;
+        position: ;
+    }
+    .radio{
+        width:220px;
+    }
+</style>
+
+<body>
+ <header class="header">
+  <div class="left">
+    <img src="logo.jpg" alt="">
+    <div>Shivam Fitness</div> 
+  </div>
+  <div class="mid">
+    <ul class="nav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Fitness calculator</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+  </div>
+  <div  class="right">
+   <button class="btn">
+       call us
+   </button>
+   <button class="btn">
+       email us
+   </button>
+  </div>
+ </header>
+ <div class="container">
+     <h1>One of the best gym in delhi</h1>
+     <form action="noaction.php">
+         <div class="form-group">
+            <input type="text" name="" placeholder="enter your name">
+            <input type="text" name="" placeholder="enter your age">
+            <h2>Please select your gender:</h2>
+  <input type="radio" class="radio" name="gender" value="male">
+  <label for="male" class="male">Male</label><br>
+  <input type="radio" class="radio" name="gender" value="female">
+  <label for="female" class="female">Female</label><br>
+  <input type="radio" class="radio" name="gender" value="other">
+  <label for="other" class="other">Other</label>
+  <input type="text" name="" placeholder="enter your phone number">
+         </div>
+         <button class="btn">submit</button>
+     </form>
+ </div>
+</body>
+</html>
